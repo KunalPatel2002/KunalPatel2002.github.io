@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Environment';
+    src: url(EnvironmentBold.ttf);
+}
+@font-face {
+    font-family: 'Questrial';
+    src: url(Questrial-Regular.ttf);
+}
+
+h1{
+    font-family: Environment;
+    font-size: xxx-large;
+   
+}
+h3{
+    font-family: Questrial;
+}
+p{
+    font-family: Questrial;
+}
