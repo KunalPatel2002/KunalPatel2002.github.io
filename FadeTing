@@ -58,7 +58,7 @@
         <img src="Support Files/Winch.jpg" width="50%" align="left" hspace="25%">
         <hr width="50%" color="black">
         
-<h3>The winch uses two NEO motors and planetary gearboxes to wind up a drum that brings the hook down, allowing the robot to climb. The two planetary gearboxes are connected with a set of gears. This allows for an additional reduction, while also reducing the load on the planetary gearbox.
+<h3>The winch uses two NEO motors and planetary gearboxs to wind up a drum that brings the hook down, allowing the robot to climb. The two planetary gearboxes are connected with a set of gears. This allows for an additional reduction, while also reducing the load on the planetary gearbox.
 At the end of the match, we cannot rely on motor power to keep the winch from unwinding, as the power to these motors gets cut off. Additionally, because we unwind the winch to control the height of the hook, we need the winch to be able to spin in both directions, eliminating using a simple ratchet as a possibility. As a result, we decided to use a friction brake that keeps the winch in place at the end of the match. A 2" bore pneumatic pushes a hub that rotates with the winch drum against a grounded wall on the winch. This prevents the winch from unwinding, allowing the robot to stay up after the match ends.</h3>
 <hr width="100%" color="black">
 <h1>MATH:</h1>
