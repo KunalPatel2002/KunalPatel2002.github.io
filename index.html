@@ -2,34 +2,86 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"
-    <title><h1><center><b>KUNAL PATEL'S DESIGN PORTFOLIO:</b></center></h1></title>
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KUNAL PATEL'S DESIGN PORTFOLIO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(201, 235, 255);
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        hr {
+            margin: 0;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .gallery a {
+            display: block;
+            width: 40%;
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        .gallery a:hover img {
+            transform: scale(1.1);
+        }
+        .text-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery a:hover .text-overlay {
+            opacity: 1;
+        }
+    </style>
 </head>
-
-
-<body style="background-color:rgb(201, 235, 255);">
+<body>
+    <h1><b>KUNAL PATEL'S DESIGN PORTFOLIO:</b></h1>
     <hr width="100%" color="black">
-    <a href="https://kunalpatel2002.github.io/swerve" target="_blank">
-        <img src="Support Files/SwerveTitle.jpg" width=40%" align="left" hspace="5%">
-    </a>
-            <a href="https://kunalpatel2002.github.io/climber" target="_blank">
-        <img src="Support Files/ClimberStowedTitle.jpg" width="40%" align="right" hspace="5%">
-    </a>
-<hr width="100%" color="black">
-</a>
-<a href="https://kunalpatel2002.github.io/Curbclimber" target="_blank">
-<img src="Support Files/CurbClimberRenderTitle.png" width="40%" align="left" hspace="5%">
-</a>
-<a href="https://kunalpatel2002.github.io/EagleProject" target="_blank">
-    <img src="Support Files/FinalAssembledTitle.jpg" width="40%" align="left" hspace="5%">
-</a>
-<hr width="100%" color="black">
-<p><center><p style="width:50%"><h3>I am currently a Senior level college student studying Mechanical Engineering at University of California, Santa Barbara. I am looking to pursue full time positions after my graduation in June of 2024. I have created this website to display some of the past projects I have done making 3D designs with CAD Software. Clicking on the pictures will lead you to a page with more info on each of the projects.</center></p></h3>
-   
-</p>
 
+    <div class="gallery">
+        <a href="https://kunalpatel2002.github.io/swerve" target="_blank">
+            <img src="Support Files/SwerveTitle.jpg" alt="Swerve" class="hover-img">
+            <div class="text-overlay">Swerve</div>
+        </a>
+        <a href="https://kunalpatel2002.github.io/climber" target="_blank">
+            <img src="Support Files/ClimberStowedTitle.jpg" alt="Climber" class="hover-img">
+            <div class="text-overlay">Climber</div>
+        </a>
+        <a href="https://kunalpatel2002.github.io/Curbclimber" target="_blank">
+            <img src="Support Files/CurbClimberRenderTitle.png" alt="Curb Climber" class="hover-img">
+            <div class="text-overlay">Curb Climber</div>
+        </a>
+        <a href="https://kunalpatel2002.github.io/EagleProject" target="_blank">
+            <img src="Support Files/FinalAssembledTitle.jpg" alt="Eagle Project" class="hover-img">
+            <div class="text-overlay">Eagle Project</div>
+        </a>
+    </div>
+
+    <hr width="100%" color="black">
+    <p style="width:50%; margin: 0 auto; text-align: center;">
+        <h3>I am currently a Senior level college student studying Mechanical Engineering at the University of California, Santa Barbara. I am looking to pursue full-time positions after my graduation in June of 2024. I have created this website to display some of the past projects I have done making 3D designs with CAD Software. Clicking on the pictures will lead you to a page with more info on each of the projects.</h3>
+    </p>
 </body>
 </html>
-
