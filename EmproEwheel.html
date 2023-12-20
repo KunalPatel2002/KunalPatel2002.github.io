@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"
-    <title><h1><center><b>EMPRO E-WHEEL, ENTRANT INTO UCSB 2023-24 NEW VENTURE COMPETITION:</b></center></h1></title>
+    <title><h1><center><b>EMPRoO E-WHEEL, ENTRANT INTO UCSB 2023-24 NEW VENTURE COMPETITION:</b></center></h1></title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -118,21 +118,31 @@
     </p> 
 
 <script>
-    let slideIndex = 0;
-    showSlides();
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-    function showSlides() {
+    function plusSlides(n) {
+        showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+        showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
         let i;
         const slides = document.getElementsByClassName("mySlides");
 
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        if (n > slides.length) {
+            slideIndex = 1;
         }
 
-        slideIndex++;
+        if (n < 1) {
+            slideIndex = slides.length;
+        }
 
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
         }
 
         slides[slideIndex - 1].style.display = "block";
@@ -141,20 +151,9 @@
         const images = document.querySelectorAll('.mySlides img');
         images.forEach((image, index) => {
             image.addEventListener('click', () => {
-                slideIndex = index + 1;
-                currentSlide(slideIndex);
+                currentSlide(index + 1);
             });
         });
-
-        setTimeout(showSlides, 3000); // Change image every 3 seconds
-    }
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
     }
 </script>
 
