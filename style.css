@@ -32,12 +32,12 @@ img {
 }
 
 .fade {
-  animation: fadeEffect 1s;
+  animation: fadeEffect 3s;
 }
 
 @keyframes fadeEffect {
   from {
-    opacity: .9;
+    opacity: .4;
   }
   to {
     opacity: 1;
