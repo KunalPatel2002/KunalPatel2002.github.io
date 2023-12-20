@@ -128,7 +128,7 @@
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
             slides[i].style.opacity = 0;
-            slides[i].style.transition = 'opacity 1.5s ease'; // Adjust the duration for a slower transition
+            slides[i].style.transition = 'opacity 3.0s ease'; // Adjust the duration for a slower transition
         }
 
         slideIndex++;
@@ -140,7 +140,7 @@
         slides[slideIndex - 1].style.display = "block";
         slides[slideIndex - 1].style.opacity = 1;
 
-        setTimeout(showSlides, 2000); // Change slide every 2 seconds (2000 milliseconds)
+        setTimeout(showSlides, 5000); // Change slide every 2 seconds (2000 milliseconds)
     }
 </script>
 
