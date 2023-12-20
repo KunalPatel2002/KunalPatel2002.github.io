@@ -14,9 +14,10 @@
             padding: 0;
         }
         h1{
-        font-family: Environment;
-        src: url(EnvironmentBold.ttf)    
-        font-size: xxx-large;
+            font-family: Environment;
+            src: url(EnvironmentBold.ttf);    
+            font-size: xxx-large;
+            text-align: center;
         }
         hr {
             margin: 0;
@@ -26,13 +27,19 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
         }
         .gallery a {
             display: block;
-            width: 40%;
+            width: calc(33.33% - 20px); /* Three items on top */
             margin: 10px;
             position: relative;
             overflow: hidden;
+        }
+        .gallery a:nth-child(4),
+        .gallery a:nth-child(5) {
+            width: calc(50% - 20px); /* Two items on the bottom */
         }
         .gallery img {
             width: 100%;
@@ -60,7 +67,7 @@
     </style>
 </head>
 <body>
-    <h1><b><center>KUNAL PATEL'S DESIGN PORTFOLIO:</center></b></h1>
+    <h1>KUNAL PATEL'S DESIGN PORTFOLIO</h1>
     <hr width="100%" color="black">
 
     <div class="gallery">
