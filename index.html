@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUNAL PATEL'S DESIGN PORTFOLIO</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: 'Gotham';
-            src: url(Gotham-Book.otf);
             background-color: rgb(201, 235, 255);
             margin: 0;
             padding: 0;
         }
         h1 {
             font-family: Environment;
-            src: url(EnvironmentBold.ttf);    
             font-size: xxx-large;
             text-align: center;
         }
@@ -32,15 +30,15 @@
         }
         .gallery a {
             display: block;
-            width: calc(33.33% - 20px); /* Three items on top */
+            width: calc(33.33% - 20px);
             margin: 10px;
             position: relative;
             overflow: hidden;
-            text-align: center; /* Center the text */
+            text-align: center;
         }
         .gallery a:nth-child(4),
         .gallery a:nth-child(5) {
-            width: calc(50% - 20px); /* Two items on the bottom */
+            width: calc(50% - 20px);
         }
         .gallery img {
             width: 100%;
@@ -49,18 +47,18 @@
         }
         .text-overlay {
             position: absolute;
-            bottom: 0; /* Move the text to the bottom of the container */
-            width: 100%; /* Make the text width the same as the image */
+            bottom: 0;
+            width: 100%;
             color: white;
-            font-size: 18px; /* Adjust the font size as needed */
+            font-size: 18px;
             font-weight: bold;
             background: rgba(0, 0, 0, 0.7);
-            padding: 5px 0; /* Adjust padding */
-            opacity: 0.8; /* Adjust opacity as needed */
+            padding: 10px 0;
+            opacity: 0.8;
             font-family: 'Gotham';
         }
         .gallery a:hover .text-overlay {
-            opacity: 1; /* Show text overlay on hover */
+            opacity: 1;
         }
         .gallery img:hover {
             transform: scale(1.2);
@@ -68,18 +66,16 @@
 
         /* Media query for mobile devices */
         @media screen and (max-width: 767px) {
-            h1 {
-                font-size: xx-large; /* Adjust font size for smaller screens */
-            }
-
             .text-overlay {
-                font-size: 10px; /* Adjust font size for smaller screens */
-                padding: 2px 0;
+                font-size: 10px;
+                padding: 1px 0;
             }
+        }
 
-            h3 {
-                font-size: 16px; /* Adjust font size for smaller screens */
-            }
+        .paragraph-container {
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
         }
     </style>
 </head>
@@ -111,8 +107,16 @@
     </div>
 
     <hr width="100%" color="black">
-    <p style="width: 80%; margin: 0 auto; text-align: center;">
-        <h3>I am currently a Senior level college student studying Mechanical Engineering at the University of California, Santa Barbara. I am looking to pursue full-time positions after my graduation in June of 2024. I have created this website to display some of the past projects I have done making 3D designs with CAD Software. Clicking on the pictures will lead you to a page with more info on each of the projects.</h3>
-    </p>
+
+    <div class="paragraph-container">
+        <p>
+            <h3>
+                I am currently a Senior level college student studying Mechanical Engineering at the University of California, Santa Barbara.
+                I am looking to pursue full-time positions after my graduation in June of 2024.
+                I have created this website to display some of the past projects I have done making 3D designs with CAD Software.
+                Clicking on the pictures will lead you to a page with more info on each of the projects.
+            </h3>
+        </p>
+    </div>
 </body>
 </html>
