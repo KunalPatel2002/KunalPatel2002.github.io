@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,6 +65,21 @@
         .gallery img:hover {
             transform: scale(1.2);
         }
+
+        /* Media query for mobile devices */
+        @media screen and (max-width: 767px) {
+            h1 {
+                font-size: xx-large; /* Adjust font size for smaller screens */
+            }
+
+            .text-overlay {
+                font-size: 12px; /* Adjust font size for smaller screens */
+            }
+
+            h3 {
+                font-size: 16px; /* Adjust font size for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,7 +110,7 @@
     </div>
 
     <hr width="100%" color="black">
-    <p style="width:50%; margin: 0 auto; text-align: center;">
+    <p style="width: 80%; margin: 0 auto; text-align: center;">
         <h3>I am currently a Senior level college student studying Mechanical Engineering at the University of California, Santa Barbara. I am looking to pursue full-time positions after my graduation in June of 2024. I have created this website to display some of the past projects I have done making 3D designs with CAD Software. Clicking on the pictures will lead you to a page with more info on each of the projects.</h3>
     </p>
 </body>
