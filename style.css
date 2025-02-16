@@ -1,4 +1,4 @@
-@font-face {
+n@font-face {
     font-family: 'Environment';
     src: url(EnvironmentBold.ttf);
 }
@@ -8,17 +8,17 @@
 }
 
 h1{
-    font-family: Gotham;
+    font-family: Environment;
     font-size: xxx-large;
    
 }
 h2{
-    font-family: Gotham;
+    font-family: Environment;
     font-size: xx-large;
     
 }
 h3{
-    font-family: Gotham;
+    font-family: Environment;
 }
 p{
     font-family: Environment;
