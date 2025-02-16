@@ -16,6 +16,8 @@
             font-family: Environment;
             font-size: xxx-large;
             text-align: center;
+            margin: 0;
+            padding-top: 20px;
         }
         hr {
             margin: 0;
@@ -77,9 +79,54 @@
             margin: 0 auto;
             text-align: center;
         }
+
+        /* Navigation bar */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .linkedin-button img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+        .linkedin-button img:hover {
+            transform: scale(1.2);
+        }
+
+        .about-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+
+        .about-link:hover {
+            color: #1db7eb;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/kunal-patel-245298163/" target="_blank" class="linkedin-button">
+            <img src="Support Files/LinkedIn_logo_initials.png" alt="LinkedIn">
+        </a>
+
+        <!-- About Link -->
+        <a href="https://kunalhpatel.com/about" class="about-link">About</a>
+    </div>
+
     <h1>KUNAL PATEL'S DESIGN PORTFOLIO</h1>
     <hr width="100%" color="black">
 
@@ -113,12 +160,10 @@
     <hr width="100%" color="black">
 
     <div class="paragraph-container">
-        <p>
-            <h3>
-                I have created this website to display some of the past projects I have done making 3D designs with CAD Software.
-                Clicking on the pictures will lead you to a page with more info on each of the projects.
-            </h3>
-        </p>
+        <h3>
+            I have created this website to display some of the past projects I have done making 3D designs with CAD Software.
+            Clicking on the pictures will lead you to a page with more info on each of the projects.
+        </h3>
     </div>
 </body>
 </html>
